@@ -1,0 +1,25 @@
+application: lneninger-skilllocation-618
+version: 1
+runtime: php
+api_version: 1
+threadsafe: yes
+
+env_variables:
+  foo: 'bar'
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /content
+  static_dir: content
+
+- url: /admin.*
+  script: content/admin.php
+  login: admin
+  secure: always
+  auth_fail_action: redirect
+
+- url: .*
+  script: main.php

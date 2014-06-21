@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+header .header-banner {
+    height:100%;
+    width: 100%;
+}
