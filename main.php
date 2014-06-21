@@ -41,7 +41,7 @@
         <?require_once 'header.php';?>
         <?initialize();?>
 
-        <form src="" method="post">
+        <form action="#" method="post">
             <input name="content" />
             <input type="submit" />
         </form>
